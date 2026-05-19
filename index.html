@@ -443,6 +443,42 @@
   .d2 { transition-delay: 0.3s; }
   .d3 { transition-delay: 0.45s; }
 
+  /* ── NAV RIGHT GROUP ── */
+  .nav-right {
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-instagram {
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    transition: color 0.3s, opacity 0.3s;
+    opacity: 0.75;
+  }
+  .nav-instagram:hover { opacity: 1; color: var(--gold); }
+  .nav.scrolled .nav-instagram { color: var(--text); }
+  .nav-instagram svg { width: 18px; height: 18px; }
+
+  /* ── CONTACT INSTAGRAM ── */
+  .contact-ig {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 16px;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--muted);
+    transition: color 0.3s;
+  }
+  .contact-ig:hover { color: var(--gold); }
+  .contact-ig svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* ── FOOTER INSTAGRAM ── */
+  .foot-right { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+  .foot-ig {
+    color: var(--muted);
+    display: flex; align-items: center;
+    transition: color 0.3s;
+  }
+  .foot-ig:hover { color: var(--gold); }
+  .foot-ig svg { width: 16px; height: 16px; }
+
   /* ── HAMBURGER ── */
   .hamburger {
     display: flex;
@@ -563,9 +599,18 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-      <span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <a href="https://www.instagram.com/nasieku_nkumum?igsh=MTdkbW5tMGltMXRvYw==" target="_blank" rel="noopener" class="nav-instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- BACKDROP -->
@@ -687,6 +732,14 @@
       <h2 class="heading reveal d1">Book &amp; <em>Collaborate</em></h2>
       <p class="contact-body reveal d2">For bookings, campaigns, and editorial collaborations — reach out directly.</p>
       <a href="https://wa.me/254714642824" target="_blank" rel="noopener" class="contact-btn reveal d3">Send a Message</a>
+      <a href="https://www.instagram.com/nasieku_nkumum?igsh=MTdkbW5tMGltMXRvYw==" target="_blank" rel="noopener" class="contact-ig reveal d3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+        @nasieku_nkumum
+      </a>
     </div>
   </section>
 
@@ -694,7 +747,16 @@
   <footer>
     <div class="foot-name">Maximillar Nasieku Nkumum</div>
     <div class="foot-center">© 2026 — All Rights Reserved</div>
-    <div class="foot-right">Nairobi, Kenya</div>
+    <div class="foot-right">
+      <a href="https://www.instagram.com/nasieku_nkumum?igsh=MTdkbW5tMGltMXRvYw==" target="_blank" rel="noopener" class="foot-ig" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <span>Nairobi, Kenya</span>
+    </div>
   </footer>
 
   <!-- LIGHTBOX -->
