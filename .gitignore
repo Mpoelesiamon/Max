@@ -1,3 +1,6 @@
 .DS_Store
 Landing/
 Thumbs.db
+.vercel
+*.heic
+*.HEIC
